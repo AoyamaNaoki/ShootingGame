@@ -55,9 +55,9 @@ public class Player : Character {
 
     public void Lean(float xInput,float yInput) {
         if(xInput > 0) {
-            DiceChild.transform.DORotate(new Vector3(0,-60, 0) + diceEulerDict[DiceNum], LEAN_DURATION1);
+            DiceChild.transform.DORotate(new Vector3(0,-30, 0) + diceEulerDict[DiceNum], LEAN_DURATION1);
         }else if(xInput < 0) {
-            DiceChild.transform.DORotate(new Vector3(0, 60, 0) + diceEulerDict[DiceNum], LEAN_DURATION1);
+            DiceChild.transform.DORotate(new Vector3(0, 30, 0) + diceEulerDict[DiceNum], LEAN_DURATION1);
         } else {
             DiceChild.transform.DORotate(diceEulerDict[DiceNum], LEAN_DURATION1/2);
         }

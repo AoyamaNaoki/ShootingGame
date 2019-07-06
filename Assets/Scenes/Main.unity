@@ -214,16 +214,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShoot#004
       objectReference: {fileID: 0}
-    - target: {fileID: 8253655878048131875, guid: ea945277a5ab98c498d874def618e5b7,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8253655878048131875, guid: ea945277a5ab98c498d874def618e5b7,
-        type: 3}
-      propertyPath: m_TagString
-      value: PlayerBulet
-      objectReference: {fileID: 0}
     - target: {fileID: 1806728046298308240, guid: ea945277a5ab98c498d874def618e5b7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -279,26 +269,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: ea945277a5ab98c498d874def618e5b7,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: ea945277a5ab98c498d874def618e5b7,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.9396359
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: ea945277a5ab98c498d874def618e5b7,
-        type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: ea945277a5ab98c498d874def618e5b7,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 40
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea945277a5ab98c498d874def618e5b7, type: 3}
 --- !u!1001 &292038217
@@ -312,16 +282,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShoot#001
-      objectReference: {fileID: 0}
-    - target: {fileID: 8253655878048131875, guid: 800fb25d2c4e994438b3c0097683c8dd,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8253655878048131875, guid: 800fb25d2c4e994438b3c0097683c8dd,
-        type: 3}
-      propertyPath: m_TagString
-      value: PlayerBulet
       objectReference: {fileID: 0}
     - target: {fileID: 1806728046298308240, guid: 800fb25d2c4e994438b3c0097683c8dd,
         type: 3}
@@ -380,33 +340,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257314580322522959, guid: 800fb25d2c4e994438b3c0097683c8dd,
         type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.0783118
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 800fb25d2c4e994438b3c0097683c8dd,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 800fb25d2c4e994438b3c0097683c8dd,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
+      propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5257314580322522959, guid: 800fb25d2c4e994438b3c0097683c8dd,
         type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].repeatInterval
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257314580322522959, guid: 800fb25d2c4e994438b3c0097683c8dd,
+        type: 3}
+      propertyPath: lengthInSec
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5257314580322522959, guid: 800fb25d2c4e994438b3c0097683c8dd,
         type: 3}
-      propertyPath: InitialModule.startColor.minMaxState
-      value: 0
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5257314580322522959, guid: 800fb25d2c4e994438b3c0097683c8dd,
         type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 70
+      propertyPath: ShapeModule.m_Rotation.z
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257314580322522959, guid: 800fb25d2c4e994438b3c0097683c8dd,
+        type: 3}
+      propertyPath: ShapeModule.arc.value
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: -2598173332014554572, guid: 800fb25d2c4e994438b3c0097683c8dd,
+        type: 3}
+      propertyPath: shotRate
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800fb25d2c4e994438b3c0097683c8dd, type: 3}
@@ -421,16 +386,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShoot#006
-      objectReference: {fileID: 0}
-    - target: {fileID: 8253655878048131875, guid: 9661e6e9931af2947ba631a3d326f7d2,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8253655878048131875, guid: 9661e6e9931af2947ba631a3d326f7d2,
-        type: 3}
-      propertyPath: m_TagString
-      value: PlayerBulet
       objectReference: {fileID: 0}
     - target: {fileID: 1806728046298308240, guid: 9661e6e9931af2947ba631a3d326f7d2,
         type: 3}
@@ -489,23 +444,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257314580322522959, guid: 9661e6e9931af2947ba631a3d326f7d2,
         type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.17501779
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 9661e6e9931af2947ba631a3d326f7d2,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.1939126
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 9661e6e9931af2947ba631a3d326f7d2,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.21698111
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 9661e6e9931af2947ba631a3d326f7d2,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 10
+      propertyPath: looping
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9661e6e9931af2947ba631a3d326f7d2, type: 3}
@@ -624,16 +564,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShoot#005
       objectReference: {fileID: 0}
-    - target: {fileID: 8253655878048131875, guid: 4430ad0178f07ad4c8237567f3f98d55,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8253655878048131875, guid: 4430ad0178f07ad4c8237567f3f98d55,
-        type: 3}
-      propertyPath: m_TagString
-      value: PlayerBulet
-      objectReference: {fileID: 0}
     - target: {fileID: 1806728046298308240, guid: 4430ad0178f07ad4c8237567f3f98d55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -688,26 +618,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 4430ad0178f07ad4c8237567f3f98d55,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.8207547
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 4430ad0178f07ad4c8237567f3f98d55,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.66202384
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 4430ad0178f07ad4c8237567f3f98d55,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.78163975
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 4430ad0178f07ad4c8237567f3f98d55,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4430ad0178f07ad4c8237567f3f98d55, type: 3}
@@ -806,16 +716,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShoot#003
       objectReference: {fileID: 0}
-    - target: {fileID: 8253655878048131875, guid: a4e8b961102365f45a43e6ef1b0585a2,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8253655878048131875, guid: a4e8b961102365f45a43e6ef1b0585a2,
-        type: 3}
-      propertyPath: m_TagString
-      value: PlayerBulet
-      objectReference: {fileID: 0}
     - target: {fileID: 1806728046298308240, guid: a4e8b961102365f45a43e6ef1b0585a2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -871,23 +771,117 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: a4e8b961102365f45a43e6ef1b0585a2,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.03184688
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: a4e8b961102365f45a43e6ef1b0585a2,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: a4e8b961102365f45a43e6ef1b0585a2,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 50
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4e8b961102365f45a43e6ef1b0585a2, type: 3}
+--- !u!1 &763706821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 763706825}
+  - component: {fileID: 763706824}
+  - component: {fileID: 763706823}
+  - component: {fileID: 763706822}
+  - component: {fileID: 763706826}
+  m_Layer: 9
+  m_Name: Cube
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!65 &763706822
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763706821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &763706823
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763706821}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &763706824
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763706821}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &763706825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763706821}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 6.43, z: 0}
+  m_LocalScale: {x: 8.15, y: 4.339, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &763706826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763706821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7ede039c51e2c4b9716f14de6c12fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 50
+  speed: 0
+  explosionPrefab: {fileID: 0}
 --- !u!4 &1027962173 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1806728046298308240, guid: 4430ad0178f07ad4c8237567f3f98d55,
@@ -1040,36 +1034,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShoot#002
-      objectReference: {fileID: 0}
-    - target: {fileID: 8253655878048131875, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8253655878048131875, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
-        type: 3}
-      propertyPath: m_TagString
-      value: PlayerBulet
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.31783962
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257314580322522959, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cd0b3ddfd760e94eb8bd215492a190a, type: 3}
