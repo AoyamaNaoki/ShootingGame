@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5257314580322522959}
   - component: {fileID: 3443631559583701983}
   - component: {fileID: -2598173332014554572}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerShoot#005
-  m_TagString: Untagged
+  m_TagString: PlayerBulet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,7 +169,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 25
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -223,7 +223,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0, b: 0, a: 1}
+      maxColor: {r: 0.8207547, g: 0.66202384, b: 0.78163975, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 0.94237673, g: 0.9219729, b: 0.9219729, a: 1}

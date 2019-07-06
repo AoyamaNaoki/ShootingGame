@@ -132,9 +132,9 @@ GameObject:
   - component: {fileID: 54502611}
   - component: {fileID: 54502610}
   - component: {fileID: 54502609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,8 +152,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 1
-  speed: 8
+  speed: 11
   explosionPrefab: {fileID: 0}
+  padding: 0.25
   diceChild: {fileID: 1471403571}
   playerShootActivator: {fileID: 1994530585}
 --- !u!65 &54502610
@@ -212,6 +213,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShoot#004
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: ea945277a5ab98c498d874def618e5b7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: ea945277a5ab98c498d874def618e5b7,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlayerBulet
       objectReference: {fileID: 0}
     - target: {fileID: 1806728046298308240, guid: ea945277a5ab98c498d874def618e5b7,
         type: 3}
@@ -286,7 +297,7 @@ PrefabInstance:
     - target: {fileID: 5257314580322522959, guid: ea945277a5ab98c498d874def618e5b7,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 30
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea945277a5ab98c498d874def618e5b7, type: 3}
@@ -301,6 +312,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShoot#001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 800fb25d2c4e994438b3c0097683c8dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 800fb25d2c4e994438b3c0097683c8dd,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlayerBulet
       objectReference: {fileID: 0}
     - target: {fileID: 1806728046298308240, guid: 800fb25d2c4e994438b3c0097683c8dd,
         type: 3}
@@ -385,7 +406,7 @@ PrefabInstance:
     - target: {fileID: 5257314580322522959, guid: 800fb25d2c4e994438b3c0097683c8dd,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800fb25d2c4e994438b3c0097683c8dd, type: 3}
@@ -400,6 +421,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShoot#006
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 9661e6e9931af2947ba631a3d326f7d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 9661e6e9931af2947ba631a3d326f7d2,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlayerBulet
       objectReference: {fileID: 0}
     - target: {fileID: 1806728046298308240, guid: 9661e6e9931af2947ba631a3d326f7d2,
         type: 3}
@@ -593,6 +624,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShoot#005
       objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 4430ad0178f07ad4c8237567f3f98d55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 4430ad0178f07ad4c8237567f3f98d55,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlayerBulet
+      objectReference: {fileID: 0}
     - target: {fileID: 1806728046298308240, guid: 4430ad0178f07ad4c8237567f3f98d55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -666,7 +707,7 @@ PrefabInstance:
     - target: {fileID: 5257314580322522959, guid: 4430ad0178f07ad4c8237567f3f98d55,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4430ad0178f07ad4c8237567f3f98d55, type: 3}
@@ -765,6 +806,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShoot#003
       objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: a4e8b961102365f45a43e6ef1b0585a2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: a4e8b961102365f45a43e6ef1b0585a2,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlayerBulet
+      objectReference: {fileID: 0}
     - target: {fileID: 1806728046298308240, guid: a4e8b961102365f45a43e6ef1b0585a2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -833,7 +884,7 @@ PrefabInstance:
     - target: {fileID: 5257314580322522959, guid: a4e8b961102365f45a43e6ef1b0585a2,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4e8b961102365f45a43e6ef1b0585a2, type: 3}
@@ -883,9 +934,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1994530586}
   - component: {fileID: 1994530587}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerShootActivator
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -990,6 +1041,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShoot#002
       objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlayerBulet
+      objectReference: {fileID: 0}
     - target: {fileID: 5257314580322522959, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
@@ -1008,7 +1069,7 @@ PrefabInstance:
     - target: {fileID: 5257314580322522959, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cd0b3ddfd760e94eb8bd215492a190a, type: 3}
@@ -1022,6 +1083,14 @@ PrefabInstance:
     - target: {fileID: 1109106612373122, guid: ade29fd297d464139931d7db4747594e, type: 3}
       propertyPath: m_Name
       value: PlayerDice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109106612373122, guid: ade29fd297d464139931d7db4747594e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109106612373122, guid: ade29fd297d464139931d7db4747594e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4166570059399006, guid: ade29fd297d464139931d7db4747594e, type: 3}
       propertyPath: m_LocalPosition.x
