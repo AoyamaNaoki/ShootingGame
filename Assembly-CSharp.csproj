@@ -64,6 +64,15 @@
      <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenProShortcuts.cs" />
      <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenTextMeshPro.cs" />
      <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenTk2d.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\Scripts\FX\Explosion.cs" />
      <Compile Include="Assets\Scripts\ObjectBase\Bullet\Bullet.cs" />
      <Compile Include="Assets\Scripts\ObjectBase\Bullet\EnemyBullet.cs" />
      <Compile Include="Assets\Scripts\ObjectBase\Bullet\PlayerBullet.cs" />
@@ -78,6 +87,7 @@
      <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />
      <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />
      <None Include="Assets\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>P:/Unity/Projects/DiceShooting/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

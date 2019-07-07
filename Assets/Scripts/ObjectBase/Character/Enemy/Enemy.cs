@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : ObjectBase {
+public class Enemy : Character {
 
     void OnParticleCollision(GameObject c) {
         if(Hp <= 0) {
-            Debug.Log("Enemy hit bullet");
+            GameObject explosion = Instantiate(ExplosionPrefab, transform.position, Quaternion.identity) as GameObject;
+            explosion.transform.localScale *= CalculateExplosionScaleRate() / 2;
             Destroy(gameObject);
         }
     }
