@@ -6,11 +6,10 @@ public class ParticlePlayer : MonoBehaviour {
     private float count = 0;
     [SerializeField] private float shotRate = 0.25f;
     [SerializeField] private int attackPower = 1;
-    [SerializeField] private ParticleSystem particleSystem;
+    [SerializeField] private new ParticleSystem particleSystem;
 
     public float ShotRate { get => shotRate; set => shotRate = value; }
     public int AttackPower { get => attackPower; set => attackPower = value; }
-    public ParticleSystem ParticleSystem { get => particleSystem; set => particleSystem = value; }
 
     void Start() {
         particleSystem = GetComponent<ParticleSystem>();
