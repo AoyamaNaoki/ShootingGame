@@ -8,10 +8,12 @@ public class ObjectBase : MonoBehaviour {
     [SerializeField] private int hp = 1;
     [SerializeField] private float speed;
     [SerializeField] private GameObject explosionPrefab;
+    [SerializeField] private int point = 100;
 
     public int Hp { get => hp; set => hp = value; }
     public float Speed { get => speed; set => speed = value; }
     public GameObject ExplosionPrefab { get => explosionPrefab; set => explosionPrefab = value; }
+    public int Point { get => point; set => point = value; }
 
     public virtual void Start() { }
     public virtual void Update() { }

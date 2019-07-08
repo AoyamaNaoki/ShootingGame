@@ -9,6 +9,7 @@ public class Enemy : Character {
             GameObject explosion = Instantiate(ExplosionPrefab, transform.position, Quaternion.identity) as GameObject;
             explosion.transform.localScale *= CalculateExplosionScaleRate() / 2;
             Destroy(gameObject);
+            UIManager.AddScore(Point);
         }
     }
 }
