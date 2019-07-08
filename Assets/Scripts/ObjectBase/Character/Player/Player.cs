@@ -15,6 +15,7 @@ public class Player : Character {
     [SerializeField] private Dictionary<int, float> diceSpeedDict = new Dictionary<int, float>() { { 1, 5f }, { 2, 7.5f }, { 3,9.0f }, { 4, 11f }, { 5, 12.5f }, { 6, 15f } };
     [SerializeField] private GameObject playerShootActivator;
     [SerializeField] private Camera playerCamera;
+    [SerializeField] private int life = 3;
 
     public float Padding { get => padding; set => padding = value; }
     public GameObject DiceChild { get => diceChild; set => diceChild = value; }
@@ -22,8 +23,10 @@ public class Player : Character {
     public Dictionary<int, Vector3> DiceEulerDict { get => diceEulerDict; set => diceEulerDict = value; }
     public Dictionary<int, float> DiceSpeedDict { get => diceSpeedDict; set => diceSpeedDict = value; }
     public GameObject PlayerShootActivator { get => playerShootActivator; set => playerShootActivator = value; }
+    public int Life { get => life; set => life = value; }
 
     public static float LEAN_DURATION1 => LEAN_DURATION;
+
 
     public override void Start() {
         base.Start();

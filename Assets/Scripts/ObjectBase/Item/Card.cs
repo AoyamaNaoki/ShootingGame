@@ -40,8 +40,12 @@ public class Card : Item {
         base.Start();
     }
 
-    public override void CollisionWithPlayer() {
+    public override void TriggerByPlayer() {
         GameMode.AddCardToSlot(gameObject);
-        base.CollisionWithPlayer();
+        base.TriggerByPlayer();
+    }
+
+    public override void TriggerByEnemy() {
+        base.TriggerByEnemy();
     }
 }

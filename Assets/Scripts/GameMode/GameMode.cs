@@ -18,19 +18,16 @@ public class GameMode : MonoBehaviour {
     [SerializeField] private int[] gameModeIndexArray;
     [SerializeField] private static int currentGameModeIndex;
     // カード保管用(ポーカーなら5毎,BJならバーストまで) FIFOで処理
-    [SerializeField] private Dictionary<int, int> cardSlotLimitation; // <gameModeIndex,cardSlotListのmaxCount>
-    [SerializeField] private static List<GameObject> cardSlotList;
-    [SerializeField] private static int currentCardSlotIndex;
+    [SerializeField] private static Dictionary<string, int> cardSlotLimitation = new Dictionary<string, int>() {{ "Poker",5},{ "BlackJack",12}}; // <gameModeIndex,cardSlotListのmaxCount>
+    [SerializeField] public static List<GameObject> cardSlotList = new List<GameObject>();
+    [SerializeField] private static int currentCardSlotIndex = 0;
     [SerializeField] private PokerHand pokerHand;
 
     public int[] GameModeIndexArray { get => gameModeIndexArray; set => gameModeIndexArray = value; }
     public int CurrentGameModeIndex { get => currentGameModeIndex; set => currentGameModeIndex = value; }
-    public Dictionary<int, int> CardSlotLimitation { get => cardSlotLimitation; set => cardSlotLimitation = value; }
     public List<GameObject> CardSlotList { get => cardSlotList; set => cardSlotList = value; }
     public int CurrentCardSlotIndex { get => currentCardSlotIndex; set => currentCardSlotIndex = value; }
-
-
-
+    public Dictionary<string, int> CardSlotLimitation { get => cardSlotLimitation; set => cardSlotLimitation = value; }
 
 
     // Start is called before the first frame update
@@ -45,12 +42,16 @@ public class GameMode : MonoBehaviour {
     
     // TODO: GameObjectクラスをCardクラスに変更予定
     public static void AddCardToSlot(GameObject card) {
+        if(cardSlotList.Count < cardSlotLimitation["Poker"]) {
+            cardSlotList.Add(card);
+            UIManager.DrawCardSlotImage(cardSlotList.Count,card);
+        }
         cardSlotList[currentCardSlotIndex] = card;
         currentCardSlotIndex++;
         if (currentCardSlotIndex >= cardSlotList.Count) {
             currentCardSlotIndex = 0;
         }
-        Debug.Log(cardSlotList[0].GetComponent<Card>().CardMark.ToString());
+        Debug.Log(cardSlotList[0].GetComponent<Card>().name.ToString());
         // TODO: 役のチェック
         // CheckHand();
     }

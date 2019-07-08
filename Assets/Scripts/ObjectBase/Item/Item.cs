@@ -7,14 +7,20 @@ public class Item : ObjectBase {
         base.Start();
     }
 
-    public void OnCollisionEnter(Collision col) {
+    protected void OnTriggerEnter(Collider col) {
         if (col.gameObject.tag == "Player") {
-            CollisionWithPlayer();
+            TriggerByPlayer();
+        }else if(col.gameObject.tag == "Enemy") {
+            TriggerByEnemy();
         }
+        Destroy(gameObject);
     }
 
-    public virtual void CollisionWithPlayer() {
-        Instantiate(ExplosionPrefab, transform.position, Quaternion.identity); // 爆発ではなくアイテム獲得のエフェクトプレハブ
-        Destroy(gameObject);
+    public virtual void TriggerByPlayer() {
+        //アイテム獲得のエフェクトプレハブ
+        Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
+    }
+
+    public virtual void TriggerByEnemy() {
     }
 }
