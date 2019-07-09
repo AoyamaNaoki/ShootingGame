@@ -34,6 +34,6 @@ public class UIManager : MonoBehaviour {
 
     public static void DrawCardList(int index, GameObject[] cardSlotArray) {
         CardSlotListUI.transform.GetChild(index).GetComponent<Image>().sprite = cardSlotArray[index].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite;
-        CardSlotListUI.transform.GetChild(index).GetComponent<Image>().color = new Color(255,255, 255, 0.3333f);
+        CardSlotListUI.transform.GetChild(index).GetComponent<Image>().color = new Color(255,255, 255, 0.5f);
     }
 }
