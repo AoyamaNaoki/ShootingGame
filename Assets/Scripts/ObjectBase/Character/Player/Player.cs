@@ -27,7 +27,6 @@ public class Player : Character {
 
     public static float LEAN_DURATION1 => LEAN_DURATION;
 
-
     public override void Start() {
         base.Start();
         Roll();

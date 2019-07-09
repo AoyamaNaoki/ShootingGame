@@ -15,48 +15,29 @@ public class GameMode : MonoBehaviour {
         OnePair = 8,
     }
 
-    [SerializeField] private int[] gameModeIndexArray;
-    [SerializeField] private static int currentGameModeIndex;
+    [SerializeField] public static int[] gameModeIndexArray;
+    [SerializeField] public static int currentGameModeIndex = 1;
     // カード保管用(ポーカーなら5毎,BJならバーストまで) FIFOで処理
-    [SerializeField] private static Dictionary<string, int> cardSlotLimitation = new Dictionary<string, int>() {{ "Poker",5},{ "BlackJack",12}}; // <gameModeIndex,cardSlotListのmaxCount>
-    [SerializeField] public static List<GameObject> cardSlotList = new List<GameObject>();
-    [SerializeField] private static int currentCardSlotIndex = 0;
+    [SerializeField] public static Dictionary<int, int> cardSlotLimitation = new Dictionary<int, int>() { { 1, 5 }, { 2, 12 } }; // <gameModeIndex,cardSlotListのmaxCount>
+    [SerializeField] public static GameObject[] cardSlotArray;
+    [SerializeField] public static int currentCardSlotIndex = 0;
     [SerializeField] private PokerHand pokerHand;
-
-    public int[] GameModeIndexArray { get => gameModeIndexArray; set => gameModeIndexArray = value; }
-    public int CurrentGameModeIndex { get => currentGameModeIndex; set => currentGameModeIndex = value; }
-    public List<GameObject> CardSlotList { get => cardSlotList; set => cardSlotList = value; }
-    public int CurrentCardSlotIndex { get => currentCardSlotIndex; set => currentCardSlotIndex = value; }
-    public Dictionary<string, int> CardSlotLimitation { get => cardSlotLimitation; set => cardSlotLimitation = value; }
-
-
-    // Start is called before the first frame update
-    void Start() {
-
-    }
-
-    // Update is called once per frame
-    void Update() {
-
-    }
     
-    // TODO: GameObjectクラスをCardクラスに変更予定
-    public static void AddCardToSlot(GameObject card) {
-        if(cardSlotList.Count < cardSlotLimitation["Poker"]) {
-            cardSlotList.Add(card);
-            UIManager.DrawCardSlotImage(cardSlotList.Count,card);
-        }
-        cardSlotList[currentCardSlotIndex] = card;
+    void Start() {
+        cardSlotArray = new GameObject[cardSlotLimitation[currentGameModeIndex]];
+    }
+
+    public static void AddCardObject(GameObject card) {
+        cardSlotArray[currentCardSlotIndex] = card;
+        UIManager.DrawCardList(currentCardSlotIndex,cardSlotArray);
         currentCardSlotIndex++;
-        if (currentCardSlotIndex >= cardSlotList.Count) {
+        if(currentCardSlotIndex >= cardSlotLimitation[currentGameModeIndex]) {
             currentCardSlotIndex = 0;
         }
-        Debug.Log(cardSlotList[0].GetComponent<Card>().name.ToString());
-        // TODO: 役のチェック
-        // CheckHand();
+        // TODO: 役をチェックする
     }
 
-    public Card GetStrongerCard(Card card1,Card card2) {
+    public Card GetStrongerCard(Card card1, Card card2) {
         return card1;
     }
 }

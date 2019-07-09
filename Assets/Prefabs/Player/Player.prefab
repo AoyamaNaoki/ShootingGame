@@ -58,7 +58,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4200425743728888949}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: PlayerShootList#004
   m_TagString: PlayerBulet
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4200425743837059548}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: PlayerShootList#002
   m_TagString: PlayerBulet
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4200425744053500549}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: PlayerShootList#001
   m_TagString: PlayerBulet
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4200425744065585471}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: PlayerShootList#005
   m_TagString: PlayerBulet
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4200425744628789374}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: PlayerShootList#003
   m_TagString: PlayerBulet
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4200425745549953836}
   - component: {fileID: 4200425745549953834}
-  - component: {fileID: 304565276}
+  - component: {fileID: 693561982}
   - component: {fileID: 4200425745549953833}
   m_Layer: 8
   m_Name: Player
@@ -255,7 +255,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &304565276
+--- !u!54 &693561982
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -292,6 +292,7 @@ MonoBehaviour:
   diceChild: {fileID: 4636778438346949001}
   playerShootActivator: {fileID: 4200425743608754401}
   playerCamera: {fileID: 0}
+  life: 3
 --- !u!1 &4200425745716046324
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4200425745716046325}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: PlayerShootList#006
   m_TagString: PlayerBulet
   m_Icon: {fileID: 0}
@@ -389,6 +390,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShoot#002_back
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -2598173332014554572, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
         type: 3}
@@ -490,6 +496,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShoot#002_front
       objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: -2598173332014554572, guid: 0cd0b3ddfd760e94eb8bd215492a190a,
         type: 3}
       propertyPath: shotRate
@@ -589,6 +600,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShoot#001_Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 800fb25d2c4e994438b3c0097683c8dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -2598173332014554572, guid: 800fb25d2c4e994438b3c0097683c8dd,
         type: 3}
@@ -710,6 +726,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShoot#005
       objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 4430ad0178f07ad4c8237567f3f98d55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 5257314580322522959, guid: 4430ad0178f07ad4c8237567f3f98d55,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
@@ -789,6 +810,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShoot#003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: a4e8b961102365f45a43e6ef1b0585a2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5257314580322522959, guid: a4e8b961102365f45a43e6ef1b0585a2,
         type: 3}
@@ -870,6 +896,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShoot#006
       objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 9661e6e9931af2947ba631a3d326f7d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 5257314580322522959, guid: 9661e6e9931af2947ba631a3d326f7d2,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
@@ -949,6 +980,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShoot#001_Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 800fb25d2c4e994438b3c0097683c8dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -2598173332014554572, guid: 800fb25d2c4e994438b3c0097683c8dd,
         type: 3}
@@ -1070,6 +1106,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShoot#004
       objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: ea945277a5ab98c498d874def618e5b7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 5257314580322522959, guid: ea945277a5ab98c498d874def618e5b7,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
@@ -1149,6 +1190,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShoot#001_Back
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253655878048131875, guid: 800fb25d2c4e994438b3c0097683c8dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5257314580322522959, guid: 800fb25d2c4e994438b3c0097683c8dd,
         type: 3}

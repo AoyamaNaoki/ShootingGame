@@ -40,12 +40,11 @@ public class Card : Item {
         base.Start();
     }
 
-    public override void TriggerByPlayer() {
-        GameMode.AddCardToSlot(gameObject);
-        base.TriggerByPlayer();
-    }
-
-    public override void TriggerByEnemy() {
-        base.TriggerByEnemy();
+    public void OnTriggerEnter(Collider col) {
+        if (col.gameObject.tag == "Player") {
+            GameMode.AddCardObject(gameObject);
+            Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
     }
 }
