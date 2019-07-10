@@ -22,16 +22,16 @@ public class GameMode : MonoBehaviour {
     [SerializeField] public static GameObject[] cardSlotArray;
     [SerializeField] public static int currentCardSlotIndex = 0;
     [SerializeField] private PokerHand pokerHand;
-    
+
     void Start() {
         cardSlotArray = new GameObject[cardSlotLimitation[currentGameModeIndex]];
     }
 
     public static void AddCardObject(GameObject card) {
         cardSlotArray[currentCardSlotIndex] = card;
-        UIManager.DrawCardList(currentCardSlotIndex,cardSlotArray);
+        UIManager.DrawCardList(currentCardSlotIndex, cardSlotArray);
         currentCardSlotIndex++;
-        if(currentCardSlotIndex >= cardSlotLimitation[currentGameModeIndex]) {
+        if (currentCardSlotIndex >= cardSlotLimitation[currentGameModeIndex]) {
             currentCardSlotIndex = 0;
         }
         // TODO: 役をチェックする
@@ -40,4 +40,19 @@ public class GameMode : MonoBehaviour {
     public Card GetStrongerCard(Card card1, Card card2) {
         return card1;
     }
+
+    // ===================== 以下、POKERゲームモード移植用メソッド =============================
+    public byte[] handCardNumberArray = new byte[cardSlotLimitation[currentGameModeIndex]];
+    public byte[] handCardMarkArray = new byte[cardSlotLimitation[currentGameModeIndex]];
+
+    public void SplitCardElement(GameObject[] cardSlotArray) {
+        for (int i = 0; i < cardSlotLimitation[currentGameModeIndex]; i++) {
+            handCardMarkArray[i] = (byte)cardSlotArray[i].GetComponent<Card>().CardMark;
+            var handCardNumberList = (byte)cardSlotArray[i].GetComponent<Card>().CardNumber;
+        }
+    }
+
+    public void CheckPokerHand() {
+    }
+    // ====================== 以上、POKERゲームモード移植用メソッド ============================
 }

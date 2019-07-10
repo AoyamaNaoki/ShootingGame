@@ -269,7 +269,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 8
   m_CollisionDetection: 0
 --- !u!114 &4200425745549953833
 MonoBehaviour:
@@ -901,10 +901,45 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3443631559583701983, guid: 9661e6e9931af2947ba631a3d326f7d2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2e9f364c943c8b546bbd70ee4c37a8ea, type: 2}
+    - target: {fileID: 3443631559583701983, guid: 9661e6e9931af2947ba631a3d326f7d2,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 5257314580322522959, guid: 9661e6e9931af2947ba631a3d326f7d2,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 12.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257314580322522959, guid: 9661e6e9931af2947ba631a3d326f7d2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257314580322522959, guid: 9661e6e9931af2947ba631a3d326f7d2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257314580322522959, guid: 9661e6e9931af2947ba631a3d326f7d2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257314580322522959, guid: 9661e6e9931af2947ba631a3d326f7d2,
+        type: 3}
+      propertyPath: RotationModule.curve.scalar
+      value: 5.096361
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257314580322522959, guid: 9661e6e9931af2947ba631a3d326f7d2,
+        type: 3}
+      propertyPath: RotationModule.separateAxes
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9661e6e9931af2947ba631a3d326f7d2, type: 3}
